@@ -1,0 +1,28 @@
+name: C/C++ CI for executions from book
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up C++ environment
+      uses: actions/setup-cpp@v1
+      with:
+          compiler: g++
+    - name: Install dependencies
+      run: sudo apt-get install -y gtest
+   # - name: Build project
+     # run: make build
+    #  working-directory: /workspaces/Problem-solving-with-C_plus-plus_W.Savitch/Chapter_4/Exercises/4_10  # Замените на ваш путь
+    - name: Test
+    - name: Test
+      run: make test
+      working-directory: /workspaces/Problem-solving-with-C_plus-plus_W.Savitch/Chapter_4/Exercises/4_10
