@@ -22,7 +22,7 @@ jobs:
    # - name: Build project
      # run: make build
     #  working-directory: /workspaces/Problem-solving-with-C_plus-plus_W.Savitch/Chapter_4/Exercises/4_10  # Замените на ваш путь
-    - name: Test
+   # - name: Test
     - name: Test
       run: make test
       working-directory: /workspaces/Problem-solving-with-C_plus-plus_W.Savitch/Chapter_4/Exercises/4_10
