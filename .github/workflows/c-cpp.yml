@@ -12,17 +12,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Set up C++ environment
-      uses: actions/setup-cpp@v1
-      with:
-          compiler: g++
+   # - uses: actions/checkout@v4
+   # - name: Set up C++ environment
+   #   uses: actions/setup-cpp@v1
+   #   with:
+   #       compiler: g++
     - name: Install dependencies
       run: sudo apt-get install -y gtest
    # - name: Build project
      # run: make build
     #  working-directory: /workspaces/Problem-solving-with-C_plus-plus_W.Savitch/Chapter_4/Exercises/4_10  # Замените на ваш путь
-    - name: Test
+   # - name: Test
     - name: Test
       run: make test
       working-directory: /workspaces/Problem-solving-with-C_plus-plus_W.Savitch/Chapter_4/Exercises/4_10
